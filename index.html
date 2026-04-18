@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QUMZ — IT-компания: обслуживание сетевой инфраструктуры, разработка программного обеспечения и DevOps-услуги.">
+    <meta name="keywords" content="QUMZ, IT, DevOps, сетевая инфраструктура, разработка ПО, software development, network services">
+    <title>QUMZ — IT Infrastructure · Software · DevOps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <img src="logo.png" alt="QUMZ" class="logo-img">
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#stack">Технологии</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta" id="nav-cta">Связаться</a>
+            <button class="burger" id="burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="hero-bg.png" alt="" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tag" id="hero-tag">IT-инфраструктура · Разработка · DevOps</p>
+            <h1 class="hero-title" id="hero-title">
+                Технологии,<br>которые <span class="accent-text">работают</span>
+            </h1>
+            <p class="hero-sub" id="hero-sub">
+                Проектируем, строим и поддерживаем IT&#8209;системы,
+                чтобы ваш бизнес двигался быстрее.
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary" id="hero-cta-primary">Наши услуги</a>
+                <a href="#contact" class="btn btn-outline" id="hero-cta-secondary">Обсудить проект</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint" id="hero-scroll">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ═══════════ SERVICES ═══════════ -->
+    <section id="services" class="services section">
+        <div class="container">
+            <p class="section-tag">Что мы делаем</p>
+            <h2 class="section-title">Услуги</h2>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card" id="service-network">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="8" r="5" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="8" cy="36" r="5" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="40" cy="36" r="5" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="36" r="5" stroke="currentColor" stroke-width="2"/>
+                            <line x1="24" y1="13" x2="24" y2="31" stroke="currentColor" stroke-width="2"/>
+                            <line x1="24" y1="20" x2="10" y2="32" stroke="currentColor" stroke-width="2"/>
+                            <line x1="24" y1="20" x2="38" y2="32" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Сетевая инфраструктура</h3>
+                    <p>Проектирование, развёртывание и обслуживание корпоративных сетей любой сложности. Мониторинг, отказоустойчивость, безопасность.</p>
+                    <ul class="card-tags">
+                        <li>LAN / WAN</li>
+                        <li>VPN</li>
+                        <li>Firewall</li>
+                        <li>Мониторинг</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card" id="service-dev">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+                            <line x1="4" y1="40" x2="44" y2="40" stroke="currentColor" stroke-width="2"/>
+                            <polyline points="16,18 10,24 16,30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="32,18 38,24 32,30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="22" y1="30" x2="26" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Разработка ПО</h3>
+                    <p>Создаём веб-приложения, микросервисы и внутренние инструменты. От идеи до продакшена — фулстек-команда под ключ.</p>
+                    <ul class="card-tags">
+                        <li>Go</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card" id="service-devops">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4 L24 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 34 L24 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M14 24 A10 10 0 0 1 24 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M34 24 A10 10 0 0 1 24 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M20 24 L23 27 L28 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>DevOps и CI/CD</h3>
+                    <p>Автоматизация пайплайнов, контейнеризация, оркестрация, инфраструктура как код. Ускоряем доставку кода в прод.</p>
+                    <ul class="card-tags">
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Terraform</li>
+                        <li>CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ ABOUT / NUMBERS ═══════════ -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="section-tag">О компании</p>
+                    <h2 class="section-title">Почему QUMZ?</h2>
+                    <p class="about-desc">
+                        Мы — команда инженеров и разработчиков, которая верит в простые, надёжные и масштабируемые решения.
+                        Не продаём коробки — строим системы, которые растут вместе с вашим бизнесом.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat" id="stat-projects">
+                            <span class="stat-number" data-target="120">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Проектов</span>
+                        </div>
+                        <div class="stat" id="stat-clients">
+                            <span class="stat-number" data-target="45">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Клиентов</span>
+                        </div>
+                        <div class="stat" id="stat-uptime">
+                            <span class="stat-number" data-target="99">0</span><span class="stat-suffix">.9%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card-stack">
+                        <div class="float-card fc-1">
+                            <span class="fc-icon">⚡</span>
+                            <span>Быстрый отклик 24/7</span>
+                        </div>
+                        <div class="float-card fc-2">
+                            <span class="fc-icon">🔒</span>
+                            <span>Безопасность на первом месте</span>
+                        </div>
+                        <div class="float-card fc-3">
+                            <span class="fc-icon">📈</span>
+                            <span>Масштабируемые решения</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ TECH STACK ═══════════ -->
+    <section id="stack" class="stack section">
+        <div class="container">
+            <p class="section-tag">Инструменты</p>
+            <h2 class="section-title">Технологии, которым мы доверяем</h2>
+            <div class="stack-marquee">
+                <div class="marquee-track">
+                    <span class="stack-item">Linux</span>
+                    <span class="stack-item">Docker</span>
+                    <span class="stack-item">Kubernetes</span>
+                    <span class="stack-item">Terraform</span>
+                    <span class="stack-item">Ansible</span>
+                    <span class="stack-item">GitLab CI</span>
+                    <span class="stack-item">GitHub Actions</span>
+                    <span class="stack-item">Go</span>
+                    <span class="stack-item">Python</span>
+                    <span class="stack-item">React</span>
+                    <span class="stack-item">Node.js</span>
+                    <span class="stack-item">PostgreSQL</span>
+                    <span class="stack-item">Redis</span>
+                    <span class="stack-item">Grafana</span>
+                    <span class="stack-item">Prometheus</span>
+                    <span class="stack-item">Nginx</span>
+                    <!-- duplicate for seamless scroll -->
+                    <span class="stack-item">Linux</span>
+                    <span class="stack-item">Docker</span>
+                    <span class="stack-item">Kubernetes</span>
+                    <span class="stack-item">Terraform</span>
+                    <span class="stack-item">Ansible</span>
+                    <span class="stack-item">GitLab CI</span>
+                    <span class="stack-item">GitHub Actions</span>
+                    <span class="stack-item">Go</span>
+                    <span class="stack-item">Python</span>
+                    <span class="stack-item">React</span>
+                    <span class="stack-item">Node.js</span>
+                    <span class="stack-item">PostgreSQL</span>
+                    <span class="stack-item">Redis</span>
+                    <span class="stack-item">Grafana</span>
+                    <span class="stack-item">Prometheus</span>
+                    <span class="stack-item">Nginx</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-tag">Контакты</p>
+                    <h2 class="section-title">Давайте обсудим<br>ваш проект</h2>
+                    <p class="contact-desc">Оставьте заявку — мы свяжемся с вами в течение одного рабочего дня.</p>
+                    <div class="contact-details">
+                        <div class="contact-row" id="contact-email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4 L12 13 L2 4"/></svg>
+                            <a href="mailto:san4o.original@gmail.com">san4o.original@gmail.com</a>
+                        </div>
+                        <div class="contact-row" id="contact-phone">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <a href="tel:+998882234746">+998 (88) 223-47-46</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="https://formsubmit.co/san4o.original@gmail.com" method="POST">
+                    <!-- FormSubmit config -->
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта QUMZ">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+                    <div class="form-group">
+                        <label for="form-name">Имя</label>
+                        <input type="text" id="form-name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Сообщение</label>
+                        <textarea id="form-message" name="message" rows="4" placeholder="Расскажите о задаче…" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="form-submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer" id="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="logo.png" alt="QUMZ" class="footer-logo">
+                <p>IT Infrastructure · Software · DevOps</p>
+            </div>
+            <div class="footer-links">
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#stack">Технологии</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 QUMZ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
